@@ -7,10 +7,11 @@
 # Project Features
 
   - uses the [Davis-Putnam](https://en.wikipedia.org/wiki/Davis%E2%80%93Putnam_algorithm) (DP) algorithm
-  - reads from the command line the name of a file then reads the input formula within the file. Input files have following format:
-     -  1	Optional comment lines at the beginning of the file start with the character ‘c’.
-     -  2	The first data line has the format “p cnf number-of-variables number-of clauses”. Variables are numbered starting at    1. 
-      - 3	The specification of the clauses follows, one clause per line. A clause line ends with a ‘0’. A clause is specified by writing             the numbers of the literals that occur in it. Note that the negated variable number i is specified as –i; thus, the clause (not-           x12 or x3 or x41) is specified in this file format as –12 3 41 0.
+  - reads from the command line the name of a file then reads the input formula within the file. 
+    Input files have following format (see test txt files):
+     - Optional comment lines at the beginning of the file start with the character ‘c’.
+     - The first data line has the format “p cnf number-of-variables number-of clauses”. Variables are numbered starting at    1. 
+     - The specification of the clauses follows, one clause per line. A clause line ends with a ‘0’. A clause is specified by writing             the numbers of the literals that occur in it. Note that the negated variable number i is specified as –i; thus, the clause (not-           x12 or x3 or x41) is specified in this file format as –12 3 41 0.
   - times the length of computation
   - multiplates many 1D and 2D arrays along with linkedlists
   - Prints to the command line a satisfying assignment for input formula (if one exists). If no satisfying assignment exists, reports that     the input formula is unsatisfiable.
