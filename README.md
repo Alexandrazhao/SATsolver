@@ -14,4 +14,4 @@
      - The specification of the clauses follows, one clause per line. A clause line ends with a ‘0’. A clause is specified by writing             the numbers of the literals that occur in it. Note that the negated variable number i is specified as –i; thus, the clause (not-           x12 or x3 or x41) is specified in this file format as –12 3 41 0.
   - times the length of computation
   - multiplates many 1D and 2D arrays along with linkedlists
-  - Prints to the command line a satisfying assignment for input formula (if one exists). If no satisfying assignment exists, reports that     the input formula is unsatisfiable.
+  - Prints to the command line a satisfying assignment for input formula (if one exists) along with the time of computation. If no             satisfying assignment exists, reports that the input formula is unsatisfiable.
